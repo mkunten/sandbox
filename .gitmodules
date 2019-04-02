@@ -1,0 +1,6 @@
+[submodule "docs/mirador/submodule/mirador-plugins"]
+	path = docs/mirador/submodule/mirador-plugins
+	url = https://github.com/dbmdz/mirador-plugins.git
+[submodule "docs/mirador/submodule/mirador-dragndrop-link-plugin"]
+	path = docs/mirador/submodule/mirador-dragndrop-link-plugin
+	url = https://github.com/2SC1815J/mirador-dragndrop-link-plugin
