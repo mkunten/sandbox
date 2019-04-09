@@ -4,3 +4,6 @@
 [submodule "docs/mirador/submodule/mirador-dragndrop-link-plugin"]
 	path = docs/mirador/submodule/mirador-dragndrop-link-plugin
 	url = https://github.com/2SC1815J/mirador-dragndrop-link-plugin
+[submodule "docs/mirador/submodule/mirador-rect-selector"]
+	path = docs/mirador/submodule/mirador-rect-selector
+	url = https://github.com/mkunten/mirador-rect-selector

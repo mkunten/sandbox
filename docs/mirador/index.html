@@ -19,6 +19,13 @@
        height: 100%;
        position: fixed;
      }
+     .rs-highlight {
+       opacity: 0.4;
+       filter: alpha(opacity=40);
+       outline: 12px auto #0A7EBE;
+       background-color: white;
+
+     }
     </style>
   </head>
   <body>
@@ -36,6 +43,7 @@
     <script type="application/javascript" src="submodule/mirador-plugins/ShareButtons/shareButtons.js"></script>
     <script type="application/javascript" src="submodule/mirador-plugins/ViewFromUrl/viewFromUrl.js"></script>
     <script type="application/javascript" src="submodule/mirador-dragndrop-link-plugin/dragndrop-link.js"></script>
+    <script type="application/javascript" src="submodule/mirador-rect-selector/mirador-rect-selector.js"></script>
     <script type="application/javascript" src="js/app.js"></script>
     <script type="application/javascript">
 
@@ -43,13 +51,25 @@
        // Called without "let" or "var"
        // so we can play with it in the browser
        myMiradorInstance = Mirador({
-         "id": "viewer",
-         "layout": "1x1",
-         "data": [
-           { "manifestUri": "https://www.dl.ndl.go.jp/api/iiif/2532375/manifest.json", "location": "NDL" },
-           { "manifestUri": "http://kotenseki.nijl.ac.jp/biblio/200024801/manifest", "location": "NIJL" },
-           { "manifestUri": "https://www.e-codices.unifr.ch/metadata/iiif/fmb-cb-0601a/manifest.json", "location": "e-codices" },
-           { "manifestUri": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b105096548/manifest.json", "location": "Gallica" }
+         id: 'viewer',
+         layout: '1x1',
+         data: [
+           {
+             manifestUri: 'https://www.dl.ndl.go.jp/api/iiif/2532375/manifest.json',
+             location: 'NDL',
+           }, {
+             manifestUri: 'https://kotenseki.nijl.ac.jp/biblio/200024801/manifest',
+             location: 'NIJL',
+           }, {
+             manifestUri: 'https://kotenseki.nijl.ac.jp/biblio/200015773/manifest',
+             location: 'NIJL',
+           }, {
+             manifestUri: 'https://www.e-codices.unifr.ch/metadata/iiif/fmb-cb-0601a/manifest.json',
+             location: 'e-codices',
+           }, {
+             manifestUri: 'https://gallica.bnf.fr/iiif/ark:/12148/btv1b105096548/manifest.json',
+             location: 'Gallica',
+           },
            // { "manifestUri": "https://iiif.lib.harvard.edu/manifests/drs:48309543", "location": "Harvard University"},
            // { "manifestUri": "https://iiif.lib.harvard.edu/manifests/drs:5981093", "location": "Harvard University"},
            // { "manifestUri": "https://iiif.lib.harvard.edu/manifests/via:olvwork576793", "location": "Harvard University"},
@@ -101,13 +121,25 @@
            // { "manifestUri": "https://scta.info/iiif/graciliscommentary/lon/manifest"},
            // { "manifestUri": "https://scta.info/iiif/plaoulcommentary/sorb/manifest"}
          ],
-         "windowObjects": [],
-         "annotationEndpoint": { "name":"Local Storage", "module": "LocalStorageEndpoint" },
-         "sidePanelOptions" : {
-           "tocTabAvailable": true,
-           "layersTabAvailable": true,
-           "searchTabAvailable": true,
-           "annotations" : true
+         annotationEndpoint: {
+           name: 'Local Storage',
+           module: 'LocalStorageEndpoint',
+         },
+         sidePanelOptions: {
+           tocTabAvailable: true,
+           layersTabAvailable: true,
+           searchTabAvailable: true,
+           annotations: true,
+         },
+
+         windowObjects: [{
+           // displayLayout: true,
+           // bottomPanel: true,
+           sidePanel: false,
+         }],
+
+         rectSelector: {
+           margin: 300,
          },
        });
        console.log(myMiradorInstance);

@@ -1,3 +1,0 @@
-// app.js
-
-const App = {};
