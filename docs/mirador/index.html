@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="submodule/mirador-plugins/MultiPageNavigation/multiPageNavigation.css" />
     <link rel="stylesheet" href="submodule/mirador-plugins/ShareButtons/shareButtons.css" />
     <link rel="stylesheet" href="submodule/mirador-dragndrop-link-plugin/dragndrop-link.css" />
+  <link rel="stylesheet" href="submodule/mirador-rect-selector/mirador-rect-selector.css" />
     <style type="text/css">
      #viewer {
        width: 100%;
@@ -58,18 +59,18 @@
            {
              manifestUri: 'https://www.dl.ndl.go.jp/api/iiif/2532375/manifest.json',
              location: 'NDL',
-           }, {
-             manifestUri: 'https://kotenseki.nijl.ac.jp/biblio/200024801/manifest',
-             location: 'NIJL',
-           }, {
-             manifestUri: 'https://kotenseki.nijl.ac.jp/biblio/200015773/manifest',
-             location: 'NIJL',
-           }, {
-             manifestUri: 'https://www.e-codices.unifr.ch/metadata/iiif/fmb-cb-0601a/manifest.json',
-             location: 'e-codices',
-           }, {
-             manifestUri: 'https://gallica.bnf.fr/iiif/ark:/12148/btv1b105096548/manifest.json',
-             location: 'Gallica',
+           // }, {
+           //   manifestUri: 'https://kotenseki.nijl.ac.jp/biblio/200024801/manifest',
+           //   location: 'NIJL',
+           // }, {
+           //   manifestUri: 'https://kotenseki.nijl.ac.jp/biblio/200015773/manifest',
+           //   location: 'NIJL',
+           // }, {
+           //   manifestUri: 'https://www.e-codices.unifr.ch/metadata/iiif/fmb-cb-0601a/manifest.json',
+           //   location: 'e-codices',
+           // }, {
+           //   manifestUri: 'https://gallica.bnf.fr/iiif/ark:/12148/btv1b105096548/manifest.json',
+           //   location: 'Gallica',
            },
          ],
 
@@ -88,14 +89,16 @@
          windowObjects: [{
            // displayLayout: true,
            // bottomPanel: true,
-           sidePanel: false,
+           sidePanel: true,
+           sidePanelVisible: false,
          }],
 
-         // rectSelector: {
-         //   margin: 300,
-         //   highlight: 'on',
+         rectSelector: {
+           annoPosition: 'right',
+           annoVertical: true,
+         //   zoomMargin: 300,
          //   zoom: 'on',
-         // },
+         },
        });
        console.log(myMiradorInstance);
      });
