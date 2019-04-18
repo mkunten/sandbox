@@ -1,9 +1,16 @@
 [submodule "docs/mirador/submodule/mirador-plugins"]
 	path = docs/mirador/submodule/mirador-plugins
 	url = https://github.com/dbmdz/mirador-plugins.git
+	branch = master
+[submodule "docs/mirador/submodule/mirador-jump-to-page"]
+	path = docs/mirador/submodule/mirador-jump-to-page
+	url = https://github.com/sul-dlss/mirador-jump-to-page.git
+	branch = master
 [submodule "docs/mirador/submodule/mirador-dragndrop-link-plugin"]
 	path = docs/mirador/submodule/mirador-dragndrop-link-plugin
 	url = https://github.com/2SC1815J/mirador-dragndrop-link-plugin
+	branch = master
 [submodule "docs/mirador/submodule/mirador-rect-selector"]
 	path = docs/mirador/submodule/mirador-rect-selector
-	url = https://github.com/mkunten/mirador-rect-selector
+	url = https://github.com/mkunten/mirador-rect-selector.git
+	branch = master
