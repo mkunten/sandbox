@@ -1,0 +1,7 @@
+Acknowledgements
+
+* Bootstrap Validator
+
+The MIT License (MIT)
+Copyright (c) 2016 Cina Saffary
+https://github.com/1000hz/bootstrap-validator/blob/master/LICENSE

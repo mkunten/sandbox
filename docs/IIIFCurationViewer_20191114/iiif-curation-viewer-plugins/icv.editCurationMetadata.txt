@@ -1,0 +1,13 @@
+Acknowledgements
+
+* JSON Editor
+
+The MIT License (MIT)
+Copyright (c) 2013 Jeremy Dorn
+https://github.com/jdorn/json-editor/blob/master/LICENSE
+
+* leaflet-sidebar
+
+The MIT License (MIT)
+Copyright (c) 2013 Tobias Bieniek
+https://github.com/Turbo87/leaflet-sidebar/blob/master/LICENSE

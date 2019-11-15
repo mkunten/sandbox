@@ -1,0 +1,79 @@
+{
+	"@context": [
+		"http://iiif.io/api/presentation/2/context.json",
+		"http://codh.rois.ac.jp/iiif/curation/1/context.json"
+	],
+	"@type": "cr:Curation",
+	"@id": "http://example.org/iiif/himawari/curation.json",
+	"label": [
+		{
+			"@value": "ひまわり8号ギャラリー",
+			"@language": "ja"
+		},
+		{
+			"@value": "Himawari-8 Gallery",
+			"@language": "en"
+		}
+	],
+	"attribution": "NII \"Digital Typhoon\" / NICT \"Science Cloud\"",
+	"related": {
+		"@id": "http://agora.ex.nii.ac.jp/digital-typhoon/himawari-3g/gallery/",
+		"format": "text/html"
+	},
+	"selections": [
+		{
+			"@id": "http://agora.ex.nii.ac.jp/digital-typhoon/range/r1",
+			"@type": "sc:Range",
+			"label": "Curated contents from 『デジタル台風：ひまわり8号クリッピング』",
+			"members": [
+				{
+					"@id": "http://agora.ex.nii.ac.jp/digital-typhoon/iiif/2015/07/07/20150707020000",
+					"@type": "cs:Canvas",
+					"label": "2015-07-07T02:00:00Z",
+					"cursorIndex": 1436234400
+				},
+				{
+					"@id": "http://agora.ex.nii.ac.jp/digital-typhoon/iiif/2015/09/29/20150929025000",
+					"@type": "cs:Canvas",
+					"label": "2015-09-29T02:50:00Z",
+					"cursorIndex": 1443495000
+				},
+				{
+					"@id": "http://agora.ex.nii.ac.jp/digital-typhoon/iiif/2015/09/29/20150929025000#xywh=828,1840,1318,592",
+					"@type": "cs:Canvas",
+					"label": "2015-09-29T02:50:00Z",
+					"cursorIndex": 1443495000
+				},
+				{
+					"@id": "http://agora.ex.nii.ac.jp/digital-typhoon/iiif/2016/08/07/20160807032000",
+					"@type": "cs:Canvas",
+					"label": "2016-08-07T03:20:00Z",
+					"cursorIndex": 1470540000
+				},
+				{
+					"@id": "http://agora.ex.nii.ac.jp/digital-typhoon/iiif/2016/08/07/20160807032000#xywh=5072,1530,2126,1520",
+					"@type": "cs:Canvas",
+					"label": "2016-08-07T03:20:00Z",
+					"cursorIndex": 1470540000
+				},
+				{
+					"@id": "http://agora.ex.nii.ac.jp/digital-typhoon/iiif/2016/08/27/20160827033000",
+					"@type": "cs:Canvas",
+					"label": "2016-08-27T03:30:00Z",
+					"cursorIndex": 1472268600
+				},
+				{
+					"@id": "http://agora.ex.nii.ac.jp/digital-typhoon/iiif/2016/08/27/20160827033000#xywh=2784,1109,4176,3028",
+					"@type": "cs:Canvas",
+					"label": "2016-08-27T03:30:00Z",
+					"cursorIndex": 1472268600
+				}
+			],
+			"within": {
+				"@id": "http://agora.ex.nii.ac.jp/digital-typhoon/himawari-3g/iiif/timeline-Hsfd.json",
+				"@type": "tl:Manifest",
+				"label": "デジタル台風：ひまわり8号クリッピング"
+			}
+		}
+	]
+}

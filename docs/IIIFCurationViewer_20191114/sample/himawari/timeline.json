@@ -1,0 +1,40 @@
+{
+	"@context": [
+		"http://iiif.io/api/presentation/2/context.json",
+		"http://codh.rois.ac.jp/iiif/timeline/1/context.json"
+	],
+	"@type": "tl:Manifest",
+	"@id": "http://example.org/iiif/himawari/timeline.json",
+	"label": [
+		{
+			"@value": "デジタル台風：ひまわり8号クリッピング",
+			"@language": "ja"
+		},
+		{
+			"@value": "Digital Typhoon: Himawari-8 Clipping",
+			"@language": "en"
+		}
+	],
+	"attribution": "NII \"Digital Typhoon\" / NICT \"Science Cloud\"",
+	"related": [
+		{
+			"format": "text/html",
+			"@id": "http://agora.ex.nii.ac.jp/digital-typhoon/himawari-3g/clipping/"
+		}
+	],
+	"viewingHint": "time",
+	"cursors": [
+		{
+			"@id": "http://example.org/iiif/himawari/cursor/",
+			"service": {
+				"@context": "http://codh.rois.ac.jp/iiif/cursor/1/context.json",
+				"@id": "http://agora.ex.nii.ac.jp/cgi-bin/iiif/cursor.pl",
+				"profile": "http://codh.rois.ac.jp/iiif/cursor/1/cursor"
+			},
+			"first": 1436234400,
+			"last": 1496275200,
+			"default": 1496275200,
+			"step": 600
+		}
+	]
+}
